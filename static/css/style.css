@@ -1,0 +1,35 @@
+h4 {
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+	margin-left: 1%;
+      }
+
+body{
+    overflow: hidden;
+    }
+.text-center {
+    margin-left: 1%;
+	}
+	
+.form-field {
+    padding: 1% 1%;
+    display: inline;
+	}
+    
+.label-text{
+    font-weight: bold;
+    }
+button:hover{
+    transition: .5s ease-in-out;
+    border-style: outset;
+    }
+button{
+    margin-bottom: 15px;
+	margin-right: 5px;
+	width: 10%;
+    }
+	
+.submit-wrap {
+    padding: 2% 1%;
+	}

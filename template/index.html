@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+	  <title>Data Prediction</title>
+	  <link rel="stylesheet" href="static/css/style.css">
+		
+	</head>
+
+	<body background="static/images/background.jpg">
+
+	  <div class="outer-wrap">
+		<main>
+		  <div class="text-center">
+			<h2>IMDb Score Prediction Web Application</h2>
+
+		  </div>
+
+		  <div class="main">
+
+			<div class="from-block">
+			  <h4>Score Predictor</h4>
+				  <form action="{{ url_for('predict ')}}"method="post">
+					<div class="form-field-set">
+						 <div class="form-field">
+							<label class="label-text">Sepal Length</label>
+							<input type="range" name="sl"  min="0" max="5">
+						 </div>
+							<label class="label-text">Sepal Width</label>
+							<input type="range" name="sw"  min="0" max="5">
+						 <div class="form-field"> 
+							<label class="label-text">Petal Length</label>
+							<input type="range" name="pl"  min="0" max="5">
+						 </div>
+						 <div class="form-field"> 
+							<label class="label-text">Petal Width</label>
+							<input type="range" name="pw"  min="0" max="5">
+						 </div>
+					</div>
+					  
+					<div class="submit-wrap">
+						<button type="submit">Submit</button>
+						<button type="submit">Reset</button>
+					</div>
+					
+					<hr>
+
+				  </form>
+			</div>
+			<br/>
+			{{ prediction_text }}
+
+		  </div>
+		</main>
+
+	  </div>
+
+
+	</body>
+
+</html>
